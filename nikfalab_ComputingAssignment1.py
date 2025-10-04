@@ -1,23 +1,9 @@
-""" This is your starter code for the Asteroid Kaboom assignment.
-
-Bahar Nikfalazar, 400673513,
-in this program we are going to create a game.......
-DO NOT FORGET THIS
-
-You should rename this file and replace this docstring with your own,
-as per the documentation standards.
-
-To use this template, make sure that both this file and pixels.py are in the
-same folder. From Pyzo, choose Run File as Script.
-
-This template allows you to use a special check_pixel_color function.
-
-For example, check_pixel_color(0, 0, "green") will return 1 if the pixel
-at location (0,0) is "green", or 0 if it is not. When you are assigning
-points for shots in the assignment, you can multiply the return value by
-the number of points for hitting that color.
-
-Sam Scott, McMaster, 2025"""
+""" Asteroid Kaboom Game
+This program is a space-themed game made with the Turtle module.
+It first draws a sky full of stars and random asteroids in different colors.
+Then, the player enters the X and Y positions to take shots at the asteroids.
+Each time a shot lands, an explosion appears, and the player earns points depending on the color of the asteroid they hit.
+"""
 
 # Import the turtle module
 import turtle
@@ -38,7 +24,6 @@ screen.bgcolor("black")# i wanted to make the background color black so i added 
 # Create the turtle object
 t = turtle.Turtle()
 
-## Start of your code
 
 # example of how to use check_pixel_color
 print( check_pixel_color(100, 0, "white") ) # returns 1
@@ -170,7 +155,8 @@ t.write(f"Final Score: {total_score}", align = "center", font= ("Arial" , 20 , "
 
 
 
-## End of your code
+
 
 # Make a clean exit
 screen.exitonclick()
+
